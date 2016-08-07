@@ -41,7 +41,7 @@ figure { left: 0; top: 0; }
 @media (min-width: 1000px) { figure { position: fixed; height: 100%; max-width: 600px; width: 46%; } }
 @media (max-width: 1000px) { figure { position: absolute; height: 38.2%; max-height: 600px; width: 100%; } }
 
-figcaption { -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; color: rgba(255, 255, 255, 0.6); height: 100%; line-height: 20px; position: relative; width: 100%; background-image: url('bg.jpg'); background-position: 100% center; background-repeat: no-repeat; font-size: 10px; font-weight: 300; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 0; -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 0; box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 0; }
+figcaption { -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; color: rgba(255, 255, 255, 0.6); height: 100%; line-height: 20px; position: relative; width: 100%; background-image: url('bg.jpg'); background-position: 100% left; background-repeat: no-repeat; font-size: 10px; font-weight: 300; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 0; -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 0; box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 0; }
 @media (max-width: 1000px) { figcaption { background-position: center 30%; } }
 
 figcaption a { color: rgba(255, 255, 255, 0.8); text-decoration: none; border-bottom: 1px solid rgba(61, 153, 135, 0); }
