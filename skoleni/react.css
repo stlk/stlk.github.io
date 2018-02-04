@@ -78,6 +78,10 @@ body {
   color: #fff;
   box-shadow: 0 2px 0 #fff;
 }
+.hero a:hover {
+  color: #bbb;
+  box-shadow: 0 2px 0 #bbb;
+}
 @media only screen and (min-width: 37.5em) {
   .hero h1 {
     font-size: 50px;
@@ -194,6 +198,7 @@ body {
 }
 .btn:hover {
   background: #ff3545;
+  color: #fff;
 }
 
 .footer {
