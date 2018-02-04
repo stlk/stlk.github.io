@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React.js nad šálkem kávy - Josef Rousek</title>
+    <link href="react.css" rel="stylesheet">
+    <meta name="author" content="Josef Rousek">
+    <meta name="description" content="Workshopy a školení zaměřené na současný React.js a související nástroje">
+    <link rel="canonical" href="/skoleni">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href='//fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section class="hero">
+      <h1>React.js<span>workshopy</span></h1>
+      <h2>Workshopy a školení zaměřené na současný React.js a související nástroje</h2>
+      <ul>
+        <li><a href="#react-na-serveru">Next.js - React na serveru</a></li>
+        <li><a href="#graphql-a-apollo">GraphQL a Apollo</a></li>
+      </ul>
+    </section>
+    <section class="section">
+      <div class="wrapper">
+        <p>
+          Prostředí javascriptu se během posledních dvou let neskutečně posunulo.
+          Javascript(ECMAScript) sám o sobě zahrnuje minimálně dvě lehce odlišné verze téhož jazyka.
+          Když do toho přidáme React, Flux nebo Redux máme před sebou celý nový svět k prozkoumání.
+          Jak se vyznat v Javascriptu a nezbláznit se z toho?
+        </p>
+        <p>
+          Připravil jsem školení, přesněji workshopy prezentující ustálené postupy ve světě Reactu.
+          Od architektury jednoduché aplikace, přes React na serveru, který vás nebude stát statisíce,
+          po komunikaci se serverem, která usnadní iterativní vývoj aplikace.
+        </p>
+        <h2>Proč já?</h2>
+        <p>
+          S Reactem pracuji od jeho raných verzí. Snažil jsem se jej pochopit, a následně
+          pracoval dle aplikační architektury Flux. Podílel jsem se na tvorbě Doména.cz,
+          registrace domény pro normální lidi. Posledních několik měsíců jsem
+          spolupracoval na tvorbě chatovací služby pro zákaznickou podporu ve firmě Brand Embassy.
+        </p>
+        <p>
+          Koučoval jsem také začátečníky při vývoji open source CMS <a href="http://keystonejs.com">Keystone.js</a>
+          v rámci <a href="http://railsgirlssummerofcode.org">Rails Girls Summer of Code</a>.
+        </p>
+      </div>
+    </section>
+    <article class="section">
+      <div class="wrapper">
+        <h1><a id="react-na-serveru" href="#react-na-serveru"><img src="./moleskine.svg" /> Next.js - React na serveru</a></h1>
+        <p>
+          Láká tě server side rendering ale nechceš s tím strávit měsíc práce? Představím ti framework Next.js a ukážu ti, jak si vytvořit aplikaci.
+        </p>
+        <h2>Co se v kurzu dozvíš?</h2>
+        <ol>
+          <li>Jaké jsou výhody a nástrahy server side rendering</li>
+          <li>Vytvoříme malou Next.js aplikaci a ošetříme hlavní nástrahy. Tj. routování, loading bar a další</li>
+          <li>Jednodušší testování díky snapshotům za pomoci nástroje Jest</li>
+          <li>Jak psát CSS ve světě, kde jsou aplikace rozdělené na komponenty</li>
+          <li>Jak optimalizovat načítání a velikost skriptů pomocí <a href="https://github.com/tc39/proposal-dynamic-import">Dynamic Import</a></li>
+        </ol>
+        <h2>Pro koho kurz je?</h2>
+        <p>
+          Očekávám zkušenosti s tvorbou React.js aplikací.
+        </p>
+        <h2>Cena</h2>
+        <p>1 700 Kč za účastníka. Nejsem plátce DPH.</p>
+        <h2>Kdy a kde?</h2>
+        <p>úterý 21. listopadu 2017 13:00 - 17:00</p>
+        <p>
+          Setkáme se v coworkingovém centru v Praze.
+        </p>
+      </div>
+    </article>
+    <div class="section section--cta">
+      <div class="wrapper">
+        <h2 class="section__title">Chci se přihlásit</h2>
+        <p class="section__intro">Napiš mi mail na <a href="mailto:josef@rousek.name">josef@rousek.name</a>.</p>
+        <a class="btn" href="mailto:josef@rousek.name">Objednat kurz</a>
+      </div>
+    </div>
+    <article class="section">
+      <div class="wrapper">
+        <h1><a id="graphql-a-apollo" href="#graphql-a-apollo"><img src="./moleskine.svg" /> GraphQL a Apollo</a></h1>
+        <p>Pojď si vyzkoušet nejnovější způsob datové komunikace vytvořený Facebookem.</p>
+        <h2>Co je GraphQL?</h2>
+        <p>
+          <a href="http://graphql.org/">GraphQL</a> je dotazovací jazyk umožňující klientovi specifikovat jaká data a v jaké formě ze serveru dostane.
+        </p>
+        <h2>Co nám to umožňuje?</h2>
+        <div class="box__grid">
+          <article class="box">
+            <div class="box__content">
+              <i class="fa fa-coffee fa-3x"></i>
+              <h3 class="box__title">Méně rozhodování při tvorbě API</h3>
+              <p>
+                GraphQL má na rozdíl od REST pevně danou strukturu, umožní nám to soustředit se na vývoj aplikace.
+              </p>
+            </div>
+          </article>
+          <article class="box">
+            <div class="box__content">
+              <i class="fa fa-leaf fa-3x"></i>
+              <h3 class="box__title">Méně dotazů na server</h3>
+              <p>
+                Potřebná data pro zobrazení obrazovky seskupíme do jednoho dotazu.
+              </p>
+            </div>
+          </article>
+          <article class="box">
+            <div class="box__content">
+              <i class="fa fa-rocket fa-3x"></i>
+              <h3 class="box__title">Volnost při vývoji klientských aplikací</h3>
+              <p>
+                Podobu dat specifikujeme na klientovi, můžeme tedy experimentovat s podobou obrazovek.
+              </p>
+            </div>
+          </article>
+        </div>
+        <h2>Co se v kurzu dozvíš?</h2>
+        <ol>
+          <li>Jak GraphQL vypadá a jaké problémy řeší</li>
+          <li>Práce s GraphQL</li>
+          <li>Implementace GraphQL serveru v pythonu pomocí knihovny <a href="http://graphene-python.org/">Graphene</a></li>
+          <li>Použití GraphQL klienta v Reactu pomocí knihovny <a href="http://dev.apollodata.com/">Apollo</a></li>
+        </ol>
+        <h2>Pro koho kurz je?</h2>
+        <p>
+          Očekávám základní znalost Reactu a serverového jazyka, ať už je to Python, Ruby nebo C#.
+        </p>
+        <h2>Cena</h2>
+        <p>2 000 Kč za účastníka. Nejsem plátce DPH.</p>
+        <h2>Kdy a kde?</h2>
+        <p>úterý 28. listopadu 2017 13:00 - 17:00</p>
+        <p>
+          Setkáme se v coworkingovém centru v Praze.
+        </p>
+      </div>
+    </article>
+    <div class="section section--cta">
+      <div class="wrapper">
+        <h2 class="section__title">Chci se přihlásit</h2>
+        <p class="section__intro">Napiš mi mail na <a href="mailto:josef@rousek.name">josef@rousek.name</a>.</p>
+        <a class="btn" href="mailto:josef@rousek.name">Objednat kurz</a>
+      </div>
+    </div>
+    <section class="section">
+      <div class="wrapper">
+        <h2>Chci kurz u nás ve firmě</h2>
+        <p>Jste alespoň dva? Domluvíme se na termínu a přijedu za vámi.</p>
+
+        <h2>Říkají o mně</h2>
+
+        <p>
+          <strong>Jakub Ruffer, FG Forrest</strong> - <em>Líbila se nám forma workshopu a diskuze, která z něho vyplynula.</em>
+        </p>
+
+        <p>
+          <strong>Václav Skřivánek</strong> - <em>React mě zaujal a díky Josefovi jsem jej poznal blíže a pochopil, co jsem nechápal a můžu se dále věnovat pilování znalostí. Ví o čem mluví a dokáže to vysvětlit technicky i polopatě :)</em>
+        </p>
+
+        <p>
+          <strong><a href="https://twitter.com/adamcironis">Adam Cironis</a></strong> - <em>Josef je suprový lektor, který se vůbec nebojí zastavit se na místě a dovysvětlovat, co komu není jasné, nebo případně opravit kód, aby mohli jet všichni dále a stíhali.
+            Kurz měl velmi podrobně připravený, včetně dodatečných materiálů a kam směřovat dál. Zároveň si moc vážím toho, že svůj kurz Pokročilé javascriptové aplikace, aneb Úvod do Reactu nabídl zdarma v rámci Týdne sdílení.
+            <br />
+            PS: Když se přihlásíte, nabídne vám také ručně umletou kávu z Pražírny a to se vyplatí!</em>
+        </p>
+
+        <h2>Proč Nad šálkem kávy?</h2>
+        <p>
+          Miluji filtrovanou kávu. O pauze se tedy můžete těšit na šálek čerstvě připravené výběrové kávy, kterou si návštěvníci <a href="https://www.naucmese.cz/josef-rousek#snippet-userAsLectorFeedback-userAsLectorFeedback" target="_blank">pochvalují</a>.
+        </p>
+      </div>
+    </section>
+    <div class="footer">
+      <p>&copy; 2017 Josef Rousek</p>
+    </div>
+    <!-- Drip -->
+    <script type="text/javascript">
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {};
+      _dcs.account = '1059447';
+
+      (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/1059447.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+      })();
+    </script>
+  </body>
+</html>
