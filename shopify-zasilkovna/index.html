@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Zásilkovna.cz na Shopify</title>
+  <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/latest/polaris.css" />
+</head>
+
+<body>
+  <div class="Polaris-Page">
+    <div class="Polaris-Page__Header Polaris-Page__Header--hasSeparator">
+      <div class="Polaris-Page__MainContent">
+        <div class="Polaris-Page__TitleAndActions">
+          <div class="Polaris-Page__Title">
+            <h1 class="Polaris-DisplayText Polaris-DisplayText--sizeLarge">Zásilkovna.cz na Shopify</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Polaris-Page__Content">
+      <div class="Polaris-Layout">
+        <div class="Polaris-Layout__Section">
+          <div class="Polaris-Card">
+            <div class="Polaris-Card__Section Polaris-TextContainer Polaris-TextContainer--spacingLoose">
+              <h2 class="Polaris-Heading">Jak je možné ovlivnit checkout proces na Shopify?</h2>
+              <p>
+                Poslední místo, kde je možné zasahovat do HTML je v košíku. V checkout
+                procesu je možné měnit pouze texty. Dalším pomocníkem je
+                <a class="Polaris-Link" href="https://help.shopify.com/api/reference/shipping_and_fulfillment/carrierservice">CarrierService</a>. Ta umožňuje ovlivnit nabídku způsobu doručení na základě obsahu košíku.</p>
+
+              <p>Ustálené řešení jak nabídnout výběr z velkého množství výdejních míst je následující.</p>
+
+              <ol>
+                <li>V košíku umožnit výběr výdejního místa.</li>
+                <li>Doručovací adresu použít jako adresu vyzvednutí.</li>
+                <li>Pokud bylo vybráno výdejní místo, v seznamu způsobů doručení se zobrazí pouze Zásilkovna v opačném případě bežné způsoby
+                  doručení.</li>
+              </ol>
+
+              <p>Ukázku checkout procesu s výběrem výdejního místa můžete vidět na následujícím videu.</p>
+
+              <p style="text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KcnRo_PEAtU?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+                  allowfullscreen=""></iframe>
+              </p>
+
+              <h2 class="Polaris-Heading">Kontakt</h2>
+
+              <p>Chcete také nabízet doručení na výdejní místa Zásilkovna.cz na svém e-shopu? Neváhejte
+                mě kontaktovat na e-mailu <a class="Polaris-Link" href="mailto:josef@rousek.name">josef@rousek.name</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Polaris-Layout__Section">
+      <div class="Polaris-FooterHelp">
+        <div class="Polaris-FooterHelp__Content">
+          <div class="Polaris-FooterHelp__Icon">
+            <span class="Polaris-Icon">
+               ✨
+            </span>
+          </div>
+          <div class="Polaris-FooterHelp__Text">
+            Vytvořil
+            <a class="Polaris-Link" href="/" data-polaris-unstyled="true">Josef Rousek</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>
