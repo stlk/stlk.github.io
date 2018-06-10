@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
   <meta name="description" content="13% objednávek je doručených pomocí Zásilkovny. Dostat ale zásilkovnu na Shopify není až tak těžké.">
   <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/latest/polaris.css" />
 </head>
+
 <body>
   <div class="Polaris-Page">
     <div class="Polaris-Page__Header Polaris-Page__Header--hasSeparator">
@@ -25,12 +27,13 @@
           <div class="Polaris-Card">
             <div class="Polaris-Card__Section Polaris-TextContainer Polaris-TextContainer--spacingLoose">
               <p>
-                13% objednávek je <a class="Polaris-Link" href="https://www.ceska-ecommerce.cz/#dopravy-a-platby">doručených pomocí Zásilkovny</a>. Dostat ale zásilkovnu na Shopify není až tak těžké.
+                13% objednávek je
+                <a class="Polaris-Link" href="https://www.ceska-ecommerce.cz/#dopravy-a-platby">doručených pomocí Zásilkovny</a>. Dostat ale zásilkovnu na Shopify není až tak těžké.
               </p>
               <h2 class="Polaris-Heading">Jak je možné ovlivnit checkout proces na Shopify?</h2>
               <p>
-                Poslední místo, kde je možné zasahovat do HTML je v košíku. V checkout
-                procesu je možné měnit pouze texty. Dalším pomocníkem je
+                Poslední místo, kde je možné zasahovat do HTML je v košíku. V checkout procesu je možné měnit pouze texty. Dalším pomocníkem
+                je
                 <a class="Polaris-Link" href="https://help.shopify.com/api/reference/shipping_and_fulfillment/carrierservice">CarrierService</a>. Ta umožňuje ovlivnit nabídku způsobu doručení na základě obsahu košíku.
               </p>
 
@@ -39,11 +42,15 @@
               <ol>
                 <li>V košíku umožnit výběr výdejního místa.</li>
                 <li>Doručovací adresu použít jako adresu vyzvednutí.</li>
-                <li>Pokud bylo vybráno výdejní místo, v seznamu způsobů doručení se zobrazí pouze Zásilkovna v opačném případě bežné způsoby
-                  doručení.</li>
+                <li>Pokud bylo vybráno výdejní místo, v seznamu způsobů doručení se zobrazí pouze Zásilkovna v opačném případě
+                  bežné způsoby doručení.
+                </li>
               </ol>
 
-              <p>Ukázku checkout procesu s výběrem výdejního místa můžete vidět na následujícím videu.</p>
+              <h2 class="Polaris-Heading">Jak nastavit Zásilkovnu na Shopify?</h2>
+
+              <p>Kombinací okna pro výběr výdejního místa a Carrier Calculated Shipping je možné docílit velmi dobré uživatelské
+                zkušenosti. Ukázku checkout procesu s výběrem výdejního místa můžete vidět na následujícím videu.</p>
 
               <p style="text-align: center;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZX39HoaZcrM?rel=0" frameborder="0" allow="autoplay; encrypted-media"
@@ -52,8 +59,8 @@
 
               <h2 class="Polaris-Heading">Kontakt</h2>
 
-              <p>Chcete také nabízet doručení na výdejní místa Zásilkovna.cz na svém e-shopu? Neváhejte
-                mě kontaktovat na e-mailu <a class="Polaris-Link" href="mailto:josef@rousek.name">josef@rousek.name</a>.</p>
+              <p>Chcete také nabízet doručení na výdejní místa Zásilkovna.cz na svém e-shopu? Neváhejte mě kontaktovat na e-mailu
+                <a class="Polaris-Link" href="mailto:josef@rousek.name">josef@rousek.name</a>.</p>
             </div>
           </div>
         </div>
@@ -64,7 +71,7 @@
         <div class="Polaris-FooterHelp__Content">
           <div class="Polaris-FooterHelp__Icon">
             <span class="Polaris-Icon">
-               ✨
+              ✨
             </span>
           </div>
           <div class="Polaris-FooterHelp__Text">
@@ -75,8 +82,16 @@
       </div>
     </div>
   </div>
-  </div>
-  </div>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-485461-7']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </body>
 
 </html>
