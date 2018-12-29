@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Zásilkovna.cz na Shopify</title>
-  <meta name="description" content="13% objednávek je doručených pomocí Zásilkovny. Dostat ale zásilkovnu na Shopify není až tak těžké.">
-  <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/latest/polaris.css" />
+  <meta name="description" content="17% objednávek je doručených pomocí Zásilkovny. Dostat ale zásilkovnu na Shopify není až tak těžké.">
+  <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/2.0.0/polaris.css" />
 </head>
 
 <body>
@@ -27,14 +27,14 @@
           <div class="Polaris-Card">
             <div class="Polaris-Card__Section Polaris-TextContainer Polaris-TextContainer--spacingLoose">
               <p>
-                13% objednávek je
-                <a class="Polaris-Link" href="https://www.ceska-ecommerce.cz/#dopravy-a-platby">doručených pomocí Zásilkovny</a>. Dostat ale zásilkovnu na Shopify není až tak těžké.
+                17% objednávek je
+                <a class="Polaris-Link" href="https://www.ceska-ecommerce.cz/#dopravy-a-platby">doručených pomocí
+                  Zásilkovny</a>. Dostat ale zásilkovnu na Shopify není až tak těžké.
               </p>
               <h2 class="Polaris-Heading">Jak je možné ovlivnit checkout proces na Shopify?</h2>
               <p>
-                Poslední místo, kde je možné zasahovat do HTML je v košíku. V checkout procesu je možné měnit pouze texty. Dalším pomocníkem
-                je
-                <a class="Polaris-Link" href="https://help.shopify.com/api/reference/shipping_and_fulfillment/carrierservice">CarrierService</a>. Ta umožňuje ovlivnit nabídku způsobu doručení na základě obsahu košíku.
+                Poslední místo, kde je možné zasahovat do HTML je v košíku. V checkout procesu je možné měnit pouze
+                texty. Výběr výdejního místa je tedy umístěný v košíku.
               </p>
 
               <p>Ustálené řešení jak nabídnout výběr z velkého množství výdejních míst je následující.</p>
@@ -42,23 +42,66 @@
               <ol>
                 <li>V košíku umožnit výběr výdejního místa.</li>
                 <li>Doručovací adresu použít jako adresu vyzvednutí.</li>
-                <li>Pokud bylo vybráno výdejní místo, v seznamu způsobů doručení se zobrazí pouze Zásilkovna v opačném případě
-                  bežné způsoby doručení.
+                <li>Pokud bylo vybráno výdejní místo, v seznamu způsobů doručení se zobrazí pouze Zásilkovna v opačném
+                  případě bežné způsoby doručení.
                 </li>
               </ol>
 
               <h2 class="Polaris-Heading">Jak nastavit Zásilkovnu na Shopify?</h2>
 
-              <p>Kombinací okna pro výběr výdejního místa a Carrier Calculated Shipping je možné docílit velmi dobré uživatelské
+              <p>Kombinací okna pro výběr výdejního místa a Carrier Calculated Shipping je možné docílit velmi dobré
+                uživatelské
                 zkušenosti. Ukázku checkout procesu s výběrem výdejního místa můžete vidět na následujícím videu.</p>
 
               <p style="text-align: center;">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w4am7vFEKSs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w4am7vFEKSs?rel=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </p>
+
+              <h2 class="Polaris-Heading">Co je CarrierService - Carrier Calculated Shipping?</h2>
+
+              <p>
+                Tato služba je určena pro výpočet ceny dopravy na základě obsahu košíku a nahrazuje pevně nastavené
+                způsobů dopravy v Shopify. Já tuto službu používám, abych mohl nabízet způsoby dopravy na základě
+                faktu,
+                jestli je vybrána zásilkovna nebo ne.
+              </p>
+
+              <p>
+                Výběr zásilkovny je možné používat i bez CarrierService. V kroku pro výběr dopravy bude ale možné vybrat jakýkoli způsob dopravy.
+              </p>
+
+              <p>
+                CarrierService je k dispozici i pro plán Shopify Basic, ale pouze pokud je placené ročně. Pro přesné
+                informace se prosím zeptejte zákaznické podpory Shopify.
+              </p>
+
+              <blockquote>
+                It's available even with cheapest plan when paid annually. It is not added automatically as you can
+                choose between CCS
+                or a custom domain free for the year. So in order to have either of them activated, the account owner
+                would need to
+                write into us to let us know which they would like to get as their perk for the year.
+              </blockquote>
+
+
+              <h2 class="Polaris-Heading">Cena</h2>
+
+              <p>
+                Cena za celé řešení je 3 000 Kč za rok a zahrnuje:
+
+                <ul>
+                  <li>instalaci na obchod</li>
+                  <li>provoz služby nabízející výběr zásilkovny</li>
+                  <li>provoz služby CarrierService</li>
+                </ul>
+              </p>
+
 
               <h2 class="Polaris-Heading">Kontakt</h2>
 
-              <p>Chcete také nabízet doručení na výdejní místa Zásilkovna.cz na svém e-shopu? Neváhejte mě kontaktovat na e-mailu
+              <p>Chcete také nabízet doručení na výdejní místa Zásilkovna.cz na svém Shopify e-shopu? Neváhejte mě kontaktovat
+                na e-mailu
                 <a class="Polaris-Link" href="mailto:josef@rousek.name">josef@rousek.name</a>.</p>
             </div>
           </div>
