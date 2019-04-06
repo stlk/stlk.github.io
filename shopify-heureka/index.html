@@ -7,16 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Heureka.cz - Ověřeno zákazníky na Shopify</title>
   <meta name="description" content="Tato Shopify aplikace pro vás vyřeší integraci se službou Heureka.cz - Ověřeno zákazníky.">
-  <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/latest/polaris.css" />
+  <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/2.0.0/polaris.min.css" />
   <style>
     .Polaris-EmptyState__Image {
       margin-left: 10%;
       width: 90%;
     }
-
-    @media (max-width: 46.5em){
-      .Polaris-EmptyState__Image {
-        display: none;
+    .Polaris-EmptyState__Content {
+      color: initial;
+    }
+    h3 {
+      margin: 1rem 0;
+    }
+    .Polaris-EmptyState {
+        margin-top: 0;
+    }
+    @media (max-width: 46.5em) {
+      .Polaris-EmptyState__DetailsContainer {
+          padding: 0 1.6rem;
+      }
+      img.Polaris-EmptyState__Image {
+          display: none;
       }
     }
   </style>
@@ -55,30 +66,19 @@
     </div>
   </div>
 </div>
-    <div class="Polaris-Layout__Section">
-      <div class="Polaris-FooterHelp">
-        <div class="Polaris-FooterHelp__Content">
-          <div class="Polaris-FooterHelp__Icon">
-            <span class="Polaris-Icon">
-              ✨
-            </span>
-          </div>
-          <div class="Polaris-FooterHelp__Text">
-            Vytvořil
-            <a class="Polaris-Link" href="/" data-polaris-unstyled="true">Josef Rousek</a>.
-          </div>
-        </div>
+  <div class="Polaris-FooterHelp">
+    <div class="Polaris-FooterHelp__Content">
+      <div class="Polaris-FooterHelp__Icon">
+        <span class="Polaris-Icon">
+          ✨
+        </span>
+      </div>
+      <div class="Polaris-FooterHelp__Text">
+        Vytvořil
+        <a class="Polaris-Link" href="/" data-polaris-unstyled="true">Josef Rousek</a>.
       </div>
     </div>
   </div>
-  <style>
-  .Polaris-EmptyState__Content {
-    color: initial;
-  }
-  h3 {
-    margin: 1rem 0;
-  }
-  </style>
   <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-485461-7']);
